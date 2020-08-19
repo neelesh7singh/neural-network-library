@@ -40,7 +40,7 @@ class NeuralNetwork {
       this.biase_h[i].randomize();
     }
   }
-  pridict(input_array) {
+  predict(input_array) {
     let inputs = Matrix.fromArray(input_array);
     let hidden_output = this.weights_ih.multiply(inputs);
     hidden_output.add(this.biase_i);
@@ -127,4 +127,4 @@ let nn = new NeuralNetwork(2, [2], 1);
 //   nn.train([1, 1], [0]);
 //   nn.train([0, 0], [0]);
 // }
-console.log(nn.pridict([1, 0]));
+console.log(nn.predict([1, 0]));

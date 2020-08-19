@@ -1,1 +1,1 @@
-# neural-network-library
+# neural-network-library(developing)
